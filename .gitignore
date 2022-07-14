@@ -1,3 +1,9 @@
+# parcel
 .parcel-cache
 dist
+
+# node
 node_modules
+
+# others
+db.json

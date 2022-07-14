@@ -1,0 +1,22 @@
+{
+  "name": "web-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "targets": {
+    "default": {
+      "distDir": "./build",
+      "publicUrl": "./"
+    }
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Varun Kumar Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.6.2"
+  }
+}

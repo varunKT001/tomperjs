@@ -1,8 +1,9 @@
 {
-  "name": "web-framework",
+  "name": "tomperjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "targets": {
     "default": {
       "distDir": "./build",
@@ -12,17 +13,17 @@
   "scripts": {
     "start:db": "json-server db.json",
     "start:parcel": "parcel index.html",
-    "build": "parcel build"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "Varun Kumar Tiwari",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
-    "parcel": "^2.6.2"
+    "axios": "^0.27.2"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
+    "parcel": "^2.6.2",
     "process": "^0.11.10"
   }
 }

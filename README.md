@@ -4,17 +4,14 @@
 <p align='center'>
 <b>A classic Web-Framework</b>
 </p>
+
 <p align='center'>
-<a href='https://varunkt001.github.io/tomperjs/' target='_blank'>https://varunkt001.github.io/tomperjs</a>
+<a href='https://varunkt001.github.io/tomperjs/modules.html'>Docs</a>
+<span>|</span>
+<a href='https://www.npmjs.com/package/@varuntiwari/tomperjs'>NPM Registry</a>
 </p>
 
 ---
-
-<p align='center'>
-This is the complete source code of TomperJS build using <a href="https://www.typescriptlang.org/">Typescript</a>
-</p>
-
-## 📄 Link to [Documentation](https://varunkt001.github.io/tomperjs/modules.html)
 
 ## 🧾 Description
 

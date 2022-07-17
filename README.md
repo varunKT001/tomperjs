@@ -14,7 +14,7 @@
 This is the complete source code of TomperJS build using <a href="https://www.typescriptlang.org/">Typescript</a>
 </p>
 
-## 📄 Link to [Documentation](https://varunkt001.github.io/tomperjs/)
+## 📄 Link to [Documentation](https://varunkt001.github.io/tomperjs/modules.html)
 
 ## 🧾 Description
 

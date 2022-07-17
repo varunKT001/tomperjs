@@ -1,6 +1,6 @@
 {
   "name": "@varuntiwari/tomperjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A classic Web-Framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

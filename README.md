@@ -25,36 +25,6 @@ npm i --save @varuntiwari/tomperjs
 
 ## 🏁 Example
 
-- Typescript
-
-```ts
-import { View } from '@varuntiwari/tomperjs';
-import { User, UserProps } from './models/User';
-
-class MyView extends View<User, UserProps> {
-  template(): string {
-    return `
-    <div>
-      <h1>Hey, I'm ${this.model.get('name')}</h1>
-    </div>
-    `;
-  }
-}
-
-const root = document.getElementById('root');
-
-if (root) {
-  // Create model
-  const user = User.buildUser({ name: 'Varun' });
-  // Create view
-  const myView = new MyView(root, user);
-  // Render the view
-  myView.render();
-}
-```
-
-- Javascript
-
 ```js
 import { View } from '@varuntiwari/tomperjs';
 
@@ -62,7 +32,7 @@ class MyView extends View {
   template() {
     return `
     <div>
-      <h1>Hey, I'm ${this.model.get('name')}</h1>
+      <h1>Awesome App</h1>
     </div>
     `;
   }
@@ -71,10 +41,8 @@ class MyView extends View {
 const root = document.getElementById('root');
 
 if (root) {
-  // Create model
-  const user = User.buildUser({ name: 'Varun' });
   // Create view
-  const myView = new MyView(root, user);
+  const myView = new MyView(root);
   // Render the view
   myView.render();
 }

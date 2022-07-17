@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "doc": "typedoc"
   },
   "keywords": [
     "javascript",
@@ -34,5 +35,8 @@
   "homepage": "https://github.com/varunKT001/tomperjs#readme",
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "devDependencies": {
+    "typedoc": "^0.23.7"
+  }
 }

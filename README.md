@@ -1,5 +1,5 @@
 <p align='center'>
-<img src='/assets/logo.svg'  width='25%'>
+<img src='./assets/logo.svg'  width='25%'>
 </p>
 <p align='center'>
 <b>A classic Web-Framework</b>
@@ -14,7 +14,7 @@
 This is the complete source code of TomperJS build using <a href="https://www.typescriptlang.org/">Typescript</a>
 </p>
 
-## 📷 Link to [Documentation](./https://varunkt001.github.io/tomperjs/)
+## 📄 Link to [Documentation](https://varunkt001.github.io/tomperjs/)
 
 ## 🧾 Description
 
@@ -28,9 +28,9 @@ npm i --save @varuntiwari/tomperjs
 
 ## 🏁 Example
 
-```ts
-/* Typescript */
+- Typescript
 
+```ts
 import { View } from '@varuntiwari/tomperjs';
 import { User, UserProps } from './models/User';
 
@@ -56,9 +56,9 @@ if (root) {
 }
 ```
 
-```js
-/* Javascript */
+- Javascript
 
+```js
 import { View } from '@varuntiwari/tomperjs';
 
 class MyView extends View {

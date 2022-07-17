@@ -1,29 +1,39 @@
 {
-  "name": "tomperjs",
+  "name": "@varuntiwari/tomperjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "A classic Web-Framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "targets": {
-    "default": {
-      "distDir": "./build",
-      "publicUrl": "./"
-    }
-  },
   "scripts": {
-    "start:db": "json-server db.json",
-    "start:parcel": "parcel index.html",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "Varun Kumar Tiwari",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "web-framework"
+  ],
+  "author": {
+    "name": "Varun Kumar Tiwari",
+    "email": "tiwarivarun819.vt33.vt@gmail.com",
+    "url": "https://varuntiwari.xyz"
+  },
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
-    "parcel": "^2.6.2",
     "process": "^0.11.10"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/varunKT001/tomperjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varunKT001/tomperjs/issues"
+  },
+  "homepage": "https://github.com/varunKT001/tomperjs#readme"
 }

@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/varunKT001/tomperjs/issues"
   },
-  "homepage": "https://github.com/varunKT001/tomperjs#readme"
+  "homepage": "https://github.com/varunKT001/tomperjs#readme",
+  "files": [
+    "lib/**/*"
+  ]
 }

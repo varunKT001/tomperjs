@@ -1,5 +1,5 @@
 <p align='center'>
-<img src='./assets/logo.svg'  width='25%'>
+<img src='/assets/logo.svg'  width='25%'>
 </p>
 <p align='center'>
 <b>A classic Web-Framework</b>
@@ -20,6 +20,69 @@ This is the complete source code of TomperJS build using <a href="https://www.ty
 
 TomperJS is a web-framework based on MVC(Model-View-Controller) architecture pattern. It is very similar to one of the most popular web-framework [BackboneJS](https://backbonejs.org/)
 
+## 💿 Installation
+
+```sh
+npm i --save @varuntiwari/tomperjs
+```
+
+## 🏁 Example
+
+```ts
+/* Typescript */
+
+import { View } from '@varuntiwari/tomperjs';
+import { User, UserProps } from './models/User';
+
+class MyView extends View<User, UserProps> {
+  template(): string {
+    return `
+    <div>
+      <h1>Hey, I'm ${this.model.get('name')}</h1>
+    </div>
+    `;
+  }
+}
+
+const root = document.getElementById('root');
+
+if (root) {
+  // Create model
+  const user = User.buildUser({ name: 'Varun' });
+  // Create view
+  const myView = new MyView(root, user);
+  // Render the view
+  myView.render();
+}
+```
+
+```js
+/* Javascript */
+
+import { View } from '@varuntiwari/tomperjs';
+
+class MyView extends View {
+  template() {
+    return `
+    <div>
+      <h1>Hey, I'm ${this.model.get('name')}</h1>
+    </div>
+    `;
+  }
+}
+
+const root = document.getElementById('root');
+
+if (root) {
+  // Create model
+  const user = User.buildUser({ name: 'Varun' });
+  // Create view
+  const myView = new MyView(root, user);
+  // Render the view
+  myView.render();
+}
+```
+
 ## ✨ Features
 
 - [x] Uses Model-View-Controller pattern.
@@ -33,7 +96,7 @@ TomperJS is a web-framework based on MVC(Model-View-Controller) architecture pat
 1. [Typescript](https://www.typescriptlang.org/)
 2. [Axios]()
 
-## 🛠 Installation and setup
+## 🛠 Local Installation and setup
 
 1. Clone the repo to your local machine.
 2. Install the required dependency for server using :
@@ -48,6 +111,12 @@ TomperJS is a web-framework based on MVC(Model-View-Controller) architecture pat
 
    ```javascript
    npm run build
+   ```
+
+2. Update the Docs using
+
+   ```javascript
+   npm run docs
    ```
 
 ## 😎 Team Members

@@ -11,7 +11,7 @@
 <div class="tsd-page-title">
 <h2>@varuntiwari/tomperjs</h2></div>
 <div class="tsd-panel tsd-typography"><p align='center'>
-<img src='./assets/logo.svg'  width='25%'>
+<img src='/assets/logo.svg'  width='25%'>
 </p>
 <p align='center'>
 <b>A classic Web-Framework</b>
@@ -35,6 +35,20 @@ This is the complete source code of TomperJS build using <a href="https://www.ty
 </a>
 <p>TomperJS is a web-framework based on MVC(Model-View-Controller) architecture pattern. It is very similar to one of the most popular web-framework <a href="https://backbonejs.org/">BackboneJS</a></p>
 
+<a href="#💿-installation" id="💿-installation" style="color: inherit; text-decoration: none;">
+  <h2>💿 Installation</h2>
+</a>
+<pre><code class="language-sh"><span class="hl-0">npm i --save @varuntiwari/tomperjs</span>
+</code></pre>
+
+<a href="#🏁-example" id="🏁-example" style="color: inherit; text-decoration: none;">
+  <h2>🏁 Example</h2>
+</a>
+<pre><code class="language-ts"><span class="hl-1">/* Typescript */</span><br/><br/><span class="hl-2">import</span><span class="hl-0"> { </span><span class="hl-3">View</span><span class="hl-0"> } </span><span class="hl-2">from</span><span class="hl-0"> </span><span class="hl-4">&#39;@varuntiwari/tomperjs&#39;</span><span class="hl-0">;</span><br/><span class="hl-2">import</span><span class="hl-0"> { </span><span class="hl-3">User</span><span class="hl-0">, </span><span class="hl-3">UserProps</span><span class="hl-0"> } </span><span class="hl-2">from</span><span class="hl-0"> </span><span class="hl-4">&#39;./models/User&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-5">class</span><span class="hl-0"> </span><span class="hl-6">MyView</span><span class="hl-0"> </span><span class="hl-5">extends</span><span class="hl-0"> </span><span class="hl-6">View</span><span class="hl-0">&lt;</span><span class="hl-6">User</span><span class="hl-0">, </span><span class="hl-6">UserProps</span><span class="hl-0">&gt; {</span><br/><span class="hl-0">  </span><span class="hl-7">template</span><span class="hl-0">(): </span><span class="hl-6">string</span><span class="hl-0"> {</span><br/><span class="hl-0">    </span><span class="hl-2">return</span><span class="hl-0"> </span><span class="hl-4">`</span><br/><span class="hl-4">    &lt;div&gt;</span><br/><span class="hl-4">      &lt;h1&gt;Hey, I&#39;m </span><span class="hl-5">${</span><span class="hl-5">this</span><span class="hl-8">.</span><span class="hl-3">model</span><span class="hl-8">.</span><span class="hl-7">get</span><span class="hl-8">(</span><span class="hl-4">&#39;name&#39;</span><span class="hl-8">)</span><span class="hl-5">}</span><span class="hl-4">&lt;/h1&gt;</span><br/><span class="hl-4">    &lt;/div&gt;</span><br/><span class="hl-4">    `</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-9">root</span><span class="hl-0"> = </span><span class="hl-3">document</span><span class="hl-0">.</span><span class="hl-7">getElementById</span><span class="hl-0">(</span><span class="hl-4">&#39;root&#39;</span><span class="hl-0">);</span><br/><br/><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">root</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-1">// Create model</span><br/><span class="hl-0">  </span><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-9">user</span><span class="hl-0"> = </span><span class="hl-3">User</span><span class="hl-0">.</span><span class="hl-7">buildUser</span><span class="hl-0">({ </span><span class="hl-3">name:</span><span class="hl-0"> </span><span class="hl-4">&#39;Varun&#39;</span><span class="hl-0"> });</span><br/><span class="hl-0">  </span><span class="hl-1">// Create view</span><br/><span class="hl-0">  </span><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-9">myView</span><span class="hl-0"> = </span><span class="hl-5">new</span><span class="hl-0"> </span><span class="hl-7">MyView</span><span class="hl-0">(</span><span class="hl-3">root</span><span class="hl-0">, </span><span class="hl-3">user</span><span class="hl-0">);</span><br/><span class="hl-0">  </span><span class="hl-1">// Render the view</span><br/><span class="hl-0">  </span><span class="hl-3">myView</span><span class="hl-0">.</span><span class="hl-7">render</span><span class="hl-0">();</span><br/><span class="hl-0">}</span>
+</code></pre>
+<pre><code class="language-js"><span class="hl-1">/* Javascript */</span><br/><br/><span class="hl-2">import</span><span class="hl-0"> { </span><span class="hl-3">View</span><span class="hl-0"> } </span><span class="hl-2">from</span><span class="hl-0"> </span><span class="hl-4">&#39;@varuntiwari/tomperjs&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-5">class</span><span class="hl-0"> </span><span class="hl-6">MyView</span><span class="hl-0"> </span><span class="hl-5">extends</span><span class="hl-0"> </span><span class="hl-6">View</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-7">template</span><span class="hl-0">() {</span><br/><span class="hl-0">    </span><span class="hl-2">return</span><span class="hl-0"> </span><span class="hl-4">`</span><br/><span class="hl-4">    &lt;div&gt;</span><br/><span class="hl-4">      &lt;h1&gt;Hey, I&#39;m </span><span class="hl-5">${</span><span class="hl-5">this</span><span class="hl-8">.</span><span class="hl-3">model</span><span class="hl-8">.</span><span class="hl-7">get</span><span class="hl-8">(</span><span class="hl-4">&#39;name&#39;</span><span class="hl-8">)</span><span class="hl-5">}</span><span class="hl-4">&lt;/h1&gt;</span><br/><span class="hl-4">    &lt;/div&gt;</span><br/><span class="hl-4">    `</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-9">root</span><span class="hl-0"> = </span><span class="hl-3">document</span><span class="hl-0">.</span><span class="hl-7">getElementById</span><span class="hl-0">(</span><span class="hl-4">&#39;root&#39;</span><span class="hl-0">);</span><br/><br/><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">root</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-1">// Create model</span><br/><span class="hl-0">  </span><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-9">user</span><span class="hl-0"> = </span><span class="hl-3">User</span><span class="hl-0">.</span><span class="hl-7">buildUser</span><span class="hl-0">({ </span><span class="hl-3">name:</span><span class="hl-0"> </span><span class="hl-4">&#39;Varun&#39;</span><span class="hl-0"> });</span><br/><span class="hl-0">  </span><span class="hl-1">// Create view</span><br/><span class="hl-0">  </span><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-9">myView</span><span class="hl-0"> = </span><span class="hl-5">new</span><span class="hl-0"> </span><span class="hl-7">MyView</span><span class="hl-0">(</span><span class="hl-3">root</span><span class="hl-0">, </span><span class="hl-3">user</span><span class="hl-0">);</span><br/><span class="hl-0">  </span><span class="hl-1">// Render the view</span><br/><span class="hl-0">  </span><span class="hl-3">myView</span><span class="hl-0">.</span><span class="hl-7">render</span><span class="hl-0">();</span><br/><span class="hl-0">}</span>
+</code></pre>
+
 <a href="#✨-features" id="✨-features" style="color: inherit; text-decoration: none;">
   <h2>✨ Features</h2>
 </a>
@@ -54,14 +68,14 @@ This is the complete source code of TomperJS build using <a href="https://www.ty
 <li><a href="">Axios</a></li>
 </ol>
 
-<a href="#🛠-installation-and-setup" id="🛠-installation-and-setup" style="color: inherit; text-decoration: none;">
-  <h2>🛠 Installation and setup</h2>
+<a href="#🛠-local-installation-and-setup" id="🛠-local-installation-and-setup" style="color: inherit; text-decoration: none;">
+  <h2>🛠 Local Installation and setup</h2>
 </a>
 <ol>
 <li><p>Clone the repo to your local machine.</p>
 </li>
 <li><p>Install the required dependency for server using :</p>
-<pre><code class="language-javascript"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">install</span>
+<pre><code class="language-javascript"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-3">install</span>
 </code></pre>
 </li>
 </ol>
@@ -71,7 +85,11 @@ This is the complete source code of TomperJS build using <a href="https://www.ty
 </a>
 <ol>
 <li><p>Build the package using</p>
-<pre><code class="language-javascript"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">build</span>
+<pre><code class="language-javascript"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-3">run</span><span class="hl-0"> </span><span class="hl-3">build</span>
+</code></pre>
+</li>
+<li><p>Update the Docs using</p>
+<pre><code class="language-javascript"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-3">run</span><span class="hl-0"> </span><span class="hl-3">docs</span>
 </code></pre>
 </li>
 </ol>

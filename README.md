@@ -101,7 +101,7 @@ if (root) {
 
 ## ⚖ License
 
-[MIT](./LICENSE.md)
+[GPL-3.0](./LICENSE.md)
 
 <br>
 <br>

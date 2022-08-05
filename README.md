@@ -59,7 +59,7 @@ if (root) {
 ## ⚙ Tools and Technologies used
 
 1. [Typescript](https://www.typescriptlang.org/)
-2. [Axios]()
+2. [Axios](https://axios-http.com/)
 
 ## 🛠 Local Installation and setup
 
